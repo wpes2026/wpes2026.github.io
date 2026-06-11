@@ -86,7 +86,7 @@ main h2:first-child { margin-top: 0; }
 main h3 { color: var(--brand); font-size: 1.15rem; margin: 28px 0 8px; }
 main p { margin: 0 0 14px; }
 
-.lead { font-size: 1.08rem; color: var(--muted); }
+.lead { font-size: 1.08rem; }
 
 .badge {
   display: inline-block;
