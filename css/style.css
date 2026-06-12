@@ -46,12 +46,9 @@ header.site-header {
   flex-wrap: wrap;
 }
 .header-logo {
-  background: #fff;
-  border-radius: 8px;
-  padding: 10px 14px;
   display: inline-flex;
 }
-.header-logo img { display: block; height: 54px; width: auto; }
+.header-logo img { display: block; height: 60px; width: auto; }
 .header-text h1 { margin: 0; font-size: 1.7rem; font-weight: 700; line-height: 1.2; }
 .header-text .subtitle { margin: 6px 0 0; font-size: 1.05rem; opacity: 0.92; }
 .header-text .colocated { margin: 4px 0 0; font-size: 0.92rem; opacity: 0.8; }
