@@ -33,7 +33,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Header ---------- */
 header.site-header {
-  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+  background: var(--brand);
   color: #fff;
 }
 .header-inner {
@@ -47,14 +47,16 @@ header.site-header {
 }
 .header-logo {
   display: inline-flex;
+  flex: 0 0 auto;
 }
-.header-logo img { display: block; height: 60px; width: auto; }
-.header-text h1 { margin: 0; font-size: 1.7rem; font-weight: 700; line-height: 1.2; }
-.header-text .subtitle { margin: 6px 0 0; font-size: 1.05rem; opacity: 0.92; }
-.header-text .colocated { margin: 4px 0 0; font-size: 0.92rem; opacity: 0.8; }
+.header-logo img { display: block; height: 70px; width: auto; }
+.header-text { flex: 1 1 0; min-width: 0; }
+.header-text h1 { margin: 0; font-size: 2.5rem; font-weight: 600; line-height: 1.15; }
+.header-text .subtitle { margin: 8px 0 0; font-size: 2rem; font-weight: 500; line-height: 1.2; }
+.header-text .colocated { margin: 6px 0 0; font-size: 1.1rem; opacity: 0.9; }
 
 /* ---------- Nav ---------- */
-nav.site-nav { background: var(--brand-dark); }
+nav.site-nav { background: var(--brand); border-top: 1px solid rgba(255, 255, 255, 0.18); }
 .nav-inner {
   max-width: var(--max);
   margin: 0 auto;
@@ -201,7 +203,11 @@ footer.site-footer p { margin: 4px 0; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 720px) {
-  .header-text h1 { font-size: 1.35rem; }
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .header-text { flex: none; }
+  .header-text h1 { font-size: 1.75rem; }
+  .header-text .subtitle { font-size: 1.5rem; }
+  .header-text .colocated { font-size: 1rem; }
   .nav-toggle {
     display: block;
     width: 100%;
