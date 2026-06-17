@@ -177,6 +177,8 @@ ul.papers .authors { color: var(--muted); font-style: italic; font-size: 0.93rem
 }
 .notice.tbd { text-align: center; color: var(--muted); }
 .notice.tbd strong { color: var(--brand); }
+.notice.open { text-align: center; border-left: 4px solid var(--brand); }
+.notice.open strong { color: var(--brand); }
 
 .btn {
   display: inline-block;
