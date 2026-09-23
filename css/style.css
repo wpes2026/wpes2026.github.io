@@ -166,6 +166,7 @@ ul.papers { margin: 10px 0 0; padding-left: 20px; }
 ul.papers li { margin-bottom: 12px; }
 ul.papers .authors { color: var(--muted); font-style: italic; font-size: 0.93rem; }
 .break { color: var(--muted); padding: 6px 16px; font-weight: 500; }
+.break .time { font-weight: 700; color: var(--brand); }
 
 /* ---------- Callout / notice ---------- */
 .notice {
